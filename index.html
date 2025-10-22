@@ -1,16 +1,91 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cape Canaveral Lighthouse & Spaceflight Tours</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
-
 <body>
-  Hello world
+  <header>
+    <nav>
+      <div class="container">
+        <h1 class="logo">Canaveral Tours</h1>
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#tours">Tours</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#book" class="btn-primary">Book Now</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="notice-banner">
+      <div class="container">
+        <h2>Important Notice</h2>
+        <p>Regrettably, due to the government shutdown, all tours are canceled.</p>
+        <p>Entry at the U.S. military station remains closed.</p>
+        <p>Please check back next week when operations resume.</p>
+      </div>
+    </section>
+
+    <section class="hero" id="about">
+      <div class="container">
+        <h2>Lighthouse & Spaceflight Tour</h2>
+        <div class="rating-section">
+          <h3>Canaveral Lighthouse Tour</h3>
+          <div class="rating">
+            <span class="stars">★★★★★</span>
+            <span class="rating-number">4.8</span>
+          </div>
+          <p class="review-count">Based on 190 reviews</p>
+          <p class="powered-by">powered by Google</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews-link" id="reviews">
+      <div class="container">
+        <a href="#reviews" class="btn-secondary">Read Our Reviews Here</a>
+      </div>
+    </section>
+
+    <section class="tour-info" id="tours">
+      <div class="container">
+        <div class="tour-content">
+          <div class="tour-image">
+            <img src="https://i0.wp.com/canaveral.tours/wp-content/uploads/2023/07/lighthouse-vertical.jpg?fit=639%2C960&ssl=1" alt="Canaveral Lighthouse as seen from ground level">
+          </div>
+          <div class="tour-description">
+            <h2>Cape Canaveral Lighthouse & Spaceflight Tours</h2>
+            <p>Transports you on a journey through the evolution of exploration as we visit the Cape Canaveral Lighthouse that guided the first explorers around the Florida coast, to the location that propelled our ships into orbit, and look toward the new frontier of planetary travel.</p>
+            
+            <p>Canaveral Tours provides tours to the <strong>Cape Canaveral Lighthouse</strong> and <strong>Space Force Missile Museum</strong> located on the Canaveral Space Force Station. Our <strong>4-hour Premier Tour</strong> provides the history of the Cape from early settlers to current space programs. The tour takes you to the lighthouse, where you have the opportunity to climb to the 5th floor of the lighthouse. The museum, gift store, and lighthouse campus await your visit.</p>
+            
+            <p>The tour continues next door to <strong>Hangar C</strong>, the first hangar built on the station. It currently houses refurbished artifacts belonging to the Space Force Missile Museum. The tour route includes "abandoned in place" launch complexes from the beginning missile program. Visit <strong>Launch Complex 26</strong> and step inside the blockhouse where we launched our first satellite into space. See the <strong>Redstone rocket</strong> on display that sent Alan Shepard and Gus Grissom into space. Walk where we first launched a man into space. Many exhibits of space artifacts and operations for the space program are on display.</p>
+            
+            <p>We also have shorter excursions that transport you to stops without the fully guided experience. Our <strong>2-hour excursion</strong> takes you to the Lighthouse and Hangar C, where you spend 1½ hours visiting. The <strong>3-hour excursion</strong> adds an additional stop at the Space Force Missile Museum. Special events and private tours are available. All tours require advance reservations for security checks. <strong>Only U.S. citizens/residents are allowed on tour;</strong> the Space Force does not allow foreign visitors on tours of the station.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="booking" id="book">
+      <div class="container">
+        <a href="https://book.peek.com/s/19037088-346e-46d8-9409-8f5136fe370e/ZY8pp" class="btn-primary btn-large" target="_blank">Secure Your Seat</a>
+        <a href="#tours" class="btn-secondary btn-large">More Information</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Canaveral Tours. All rights reserved.</p>
+    </div>
+  </footer>
+
   <script src="script.js"></script>
 </body>
-
 </html>

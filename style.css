@@ -1,4 +1,271 @@
-html {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #1a5490;
+  --secondary-color: #f0f4f8;
+  --accent-color: #e63946;
+  --text-dark: #2b2d42;
+  --text-light: #ffffff;
+  --border-color: #ddd;
+}
+
+html, body {
   height: 100%;
   width: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  line-height: 1.6;
+  color: var(--text-dark);
+  background-color: #ffffff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  padding: 1rem 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.nav-links a {
+  color: var(--text-light);
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.3s;
+}
+
+.nav-links a:hover {
+  opacity: 0.8;
+}
+
+.btn-primary {
+  background-color: var(--accent-color);
+  color: var(--text-light);
+  padding: 0.6rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  background-color: #d62839;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--primary-color);
+  padding: 0.6rem 1.5rem;
+  border: 2px solid var(--primary-color);
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s;
+  font-weight: 600;
+}
+
+.btn-secondary:hover {
+  background-color: var(--primary-color);
+  color: var(--text-light);
+}
+
+.btn-large {
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+  margin: 0.5rem;
+}
+
+.notice-banner {
+  background-color: #fff3cd;
+  border-bottom: 3px solid #ffc107;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.notice-banner h2 {
+  color: #856404;
+  margin-bottom: 1rem;
+}
+
+.notice-banner p {
+  color: #856404;
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+}
+
+.hero {
+  background-color: var(--secondary-color);
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+}
+
+.rating-section {
+  margin-top: 2rem;
+}
+
+.rating-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--text-dark);
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.stars {
+  color: #ffa500;
+  font-size: 1.5rem;
+}
+
+.rating-number {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--text-dark);
+}
+
+.review-count {
+  color: #666;
+  margin: 0.5rem 0;
+}
+
+.powered-by {
+  color: #999;
+  font-size: 0.9rem;
+}
+
+.reviews-link {
+  padding: 2rem 0;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.tour-info {
+  padding: 4rem 0;
+  background-color: #ffffff;
+}
+
+.tour-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.tour-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.tour-description h2 {
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+}
+
+.tour-description p {
+  margin-bottom: 1.5rem;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.tour-description strong {
+  color: var(--primary-color);
+}
+
+.booking {
+  background-color: var(--secondary-color);
+  padding: 4rem 0;
+  text-align: center;
+}
+
+footer {
+  background-color: var(--text-dark);
+  color: var(--text-light);
+  padding: 2rem 0;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    gap: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .logo {
+    font-size: 1.4rem;
+  }
+
+  .hero h2 {
+    font-size: 2rem;
+  }
+
+  .tour-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .btn-large {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    display: block;
+    margin: 0.5rem 0;
+  }
+
+  .tour-description h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  header nav .container {
+    flex-direction: column;
+    gap: 1rem;
+  }
 }
