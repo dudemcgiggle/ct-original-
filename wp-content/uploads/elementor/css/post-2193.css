@@ -1,0 +1,146 @@
+.elementor-2193 .elementor-element.elementor-element-2979a23{--display:flex;--margin-top:0px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}/* Start custom CSS for html, class: .elementor-element-e4abe96 *//* Import all webfonts (e.g., via Typekit) */
+@import url("https://use.typekit.net/dcl5phc.css");
+
+/* ================================
+   Custom Properties
+   ================================ */
+:root {
+  /* Font Stacks */
+  --font-heading: 'Sofia Pro Variable', sans-serif;
+  --font-body: 'Proxima Nova', sans-serif;
+
+  /* Color Palette */
+  --color-text: #333333;          /* Body text */
+  --color-heading: #1e73be;       /* Blue headers */
+  --color-accent: #5A0000;        /* Accent/red */
+  --color-note: #555555;          /* Secondary text */
+
+  /* Layout */
+  --max-width: 900px;
+  --gutter: 1rem;
+
+  /* Border Radius */
+  --radius-small: 4px;
+  --radius-full: 9999px;
+}
+
+/* ================================
+   1. Reset & Box-Sizing
+   ================================ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ================================
+   2. Base Typography
+   ================================ */
+body {
+  font-family: var(--font-body);
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--color-heading);
+  text-transform: uppercase;
+  margin-bottom: 0.5em;
+}
+
+/* ================================
+   3. Container
+   ================================ */
+.nomenclature {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--gutter);
+}
+
+/* ================================
+   4. Section Titles
+   ================================ */
+.nomenclature__title {
+  font-size: 2rem;
+  margin-bottom: var(--gutter);
+}
+
+.nomenclature__section-title {
+  font-size: 1.5rem;
+  margin-top: var(--gutter);
+  margin-bottom: calc(var(--gutter) / 2);
+}
+
+/* ================================
+   5. Paragraphs & Notes
+   ================================ */
+.nomenclature__paragraph {
+  margin-bottom: var(--gutter);
+}
+
+.nomenclature__note {
+  color: var(--color-note);
+  font-size: 0.9rem;
+  margin-bottom: var(--gutter);
+}
+
+/* ================================
+   6. Utility Classes
+   ================================ */
+.rounded-small { border-radius: var(--radius-small); }
+.rounded-full  { border-radius: var(--radius-full); }
+.text-center   { text-align: center; }
+
+/* ================================
+   7. Notifications (Example)
+   ================================ */
+.notification {
+  border: 1px solid var(--color-accent);
+  background-color: #fafafa;
+  padding: var(--gutter);
+  border-radius: var(--radius-small);
+  margin-bottom: var(--gutter);
+}
+
+.notification--error {
+  border-color: #d9534f;
+  background-color: #fdf2f2;
+}
+
+.notification__title {
+  font-size: 1.25rem;
+  color: var(--color-heading);
+  margin-bottom: 0.5em;
+}
+
+.notification__message {
+  color: var(--color-text);
+}
+
+/* ================================
+   8. Buttons
+   ================================ */
+.btn {
+  display: inline-block;
+  padding: 0.5em 1em;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: var(--color-accent);
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+}
+
+.btn:hover,
+.btn:focus {
+  opacity: 0.9;
+}
+
+.btn--rounded {
+  border-radius: var(--radius-full);
+}/* End custom CSS */

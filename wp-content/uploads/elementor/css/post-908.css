@@ -1,0 +1,130 @@
+.elementor-908 .elementor-element.elementor-element-4b1e22f2{--display:flex;}.elementor-908 .elementor-element.elementor-element-30a6c14{--display:flex;--min-height:0vh;--margin-top:0px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-908 .elementor-element.elementor-element-e517b57{width:auto;max-width:auto;}.elementor-908 .elementor-element.elementor-element-e517b57 > .elementor-widget-container{margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;}/* Start custom CSS for html, class: .elementor-element-fca349e *//*=====================================
+  1) HERO BANNER
+======================================*/
+.hero--reservation {
+  position: relative;
+  width: 100%;
+  min-height: 222px;
+  background: url("https://canaveral.tours/wp-content/uploads/2024/03/LighthouseImg.png")
+    center 2% / cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+.hero--reservation .page-title {
+  margin: 0;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+}
+
+
+/*=====================================
+  2) RESERVATION INFO SECTION
+======================================*/
+.reservation-info {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+.reservation-info__copy p {
+  margin-bottom: 1.5rem;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+.reservation-info__form {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+
+/*=====================================
+  3) JOTFORM (FULL-SOURCE EMBED ONLY)
+======================================*/
+.jotform-form {
+  font-family: inherit;
+}
+
+/* Stack fields vertically */
+.jotform-form .form-line {
+  display: flex !important;
+  flex-direction: column !important;
+  margin-bottom: 1.5rem !important;
+}
+
+/* Labels */
+.jotform-form .form-label {
+  font-family: "Barlow Condensed", sans-serif !important;
+  font-weight: 600 !important;
+  margin-bottom: 0.5rem !important;
+  color: #222 !important;
+}
+
+/* Inputs, selects, textareas */
+.jotform-form .form-input-wide,
+.jotform-form input,
+.jotform-form select,
+.jotform-form textarea {
+  width: 100% !important;
+  padding: 0.75rem !important;
+  border: 1px solid #ccc !important;
+  border-radius: 4px !important;
+  box-sizing: border-box !important;
+  font-family: inherit !important;
+}
+
+/* Error messages */
+.jotform-form .form-line-error .form-error-message {
+  color: #d9534f !important;
+  font-size: 0.875rem !important;
+  margin-top: 0.25rem !important;
+}
+
+/* Submit button */
+.jotform-form .form-submit-button,
+.jotform-form button {
+  align-self: center !important;
+  padding: 0.75rem 2rem !important;
+  background-color: #BE8B4A !important;
+  color: #fff !important;
+  border: none !important;
+  border-radius: 50px !important;
+  font-family: "Barlow Condensed", sans-serif !important;
+  font-size: 1rem !important;
+  cursor: pointer !important;
+  transition: background-color 0.2s ease !important;
+}
+.jotform-form .form-submit-button:hover,
+.jotform-form button:hover {
+  background-color: #a6783c !important;
+}
+
+
+/*=====================================
+  4) RESPONSIVE
+======================================*/
+@media (max-width: 768px) {
+  .hero--reservation {
+    min-height: 160px;
+    padding: 1.5rem 1rem;
+  }
+  .hero--reservation .page-title {
+    font-size: 2rem;
+  }
+  .reservation-info {
+    margin: 2rem auto;
+  }
+  .jotform-form .form-submit-button,
+  .jotform-form button {
+    width: 100% !important;
+    max-width: none !important;
+  }
+}/* End custom CSS */

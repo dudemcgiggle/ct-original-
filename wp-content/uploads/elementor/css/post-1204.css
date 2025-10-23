@@ -1,0 +1,170 @@
+.elementor-1204 .elementor-element.elementor-element-33034c1{--display:flex;border-style:solid;--border-style:solid;border-width:1px 0px 0px 0px;--border-top-width:1px;--border-right-width:0px;--border-bottom-width:0px;--border-left-width:0px;border-color:#494949;--border-color:#494949;--margin-top:0px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-1204 .elementor-element.elementor-element-33034c1:not(.elementor-motion-effects-element-type-background), .elementor-1204 .elementor-element.elementor-element-33034c1 > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-color:#EBEBEB;}.elementor-1204 .elementor-element.elementor-element-a6eb051 > .elementor-widget-container{margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;}.elementor-theme-builder-content-area{height:400px;}.elementor-location-header:before, .elementor-location-footer:before{content:"";display:table;clear:both;}/* Start custom CSS for container, class: .elementor-element-33034c1 *//*──────────────────────────────────────────────────────────────────────────
+  Canaveral Tours Footer Styles
+  • Entire footer background is pure white
+  • Four-column responsive grid collapsing to single-column on small screens
+  • No list bullets; clean typography and spacing
+──────────────────────────────────────────────────────────────────────────*/
+
+/* 0) RESET & BASE --------------------------------------------------------*/
+.ct-footer,
+.ct-footer * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.ct-footer {
+  background: #fff;
+  font-family: "Poppins", sans-serif;
+  color: #263238;
+  font-size: 15px;
+  line-height: 1.7;
+  margin-top: 4rem;
+  text-decoration: none;
+}
+
+/* 1) LOGO STRIP ----------------------------------------------------------*/
+.ct-header {
+  background: #fff;
+  text-align: center;
+  padding: 1.5rem 1rem 0;
+}
+.ct-logo {
+  width: 160px;
+  max-width: 90%;
+  height: auto;
+  display: inline-block;
+}
+
+/* 2) CONTENT GRID --------------------------------------------------------*/
+.ct-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 2rem auto 0;
+  padding: 0 1rem;
+}
+
+/* Column container */
+.ct-col {
+  min-width: 0;
+}
+
+/* Headings */
+.ct-h {
+  font-size: 0.98rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #001f3f;
+  margin-bottom: 0.75rem;
+}
+.ct-sub {
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #455a64;
+  margin: 1rem 0 0.35rem;
+}
+
+/* Lists */
+.ct-list {
+  list-style: none;
+}
+.ct-list li {
+  margin: 0.45rem 0;
+}
+.ct-list a {
+  color: #263238;
+  transition: color 0.25s ease;
+}
+.ct-list a:hover {
+  color: #001f3f;
+}
+
+/* Contact block */
+.ct-address {
+  font-style: normal;
+}
+.ct-contact {
+  display: inline-block;
+  color: #263238;
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.25);
+  transition: color 0.25s, border-bottom-color 0.25s;
+}
+.ct-contact:hover {
+  color: #001f3f;
+  border-bottom-color: transparent;
+}
+
+/* 3) BOTTOM BAR ----------------------------------------------------------*/
+.ct-bottom {
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 2rem auto 0;
+  padding: 1.25rem 1rem 2.5rem;
+  background: #fff;
+}
+
+/* Policies */
+.ct-policies {
+  font-size: 0.9rem;
+}
+.ct-policies a {
+  color: #001f3f;
+  transition: text-decoration 0.25s;
+}
+.ct-policies a:hover {
+  text-decoration: underline;
+}
+
+/* Badge & Social container */
+.ct-brand {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+/* Badges */
+.ct-badge img {
+  display: block;
+  height: 32px;
+  width: auto;
+  transition: opacity 0.25s ease;
+}
+.ct-badge:hover img {
+  opacity: 0.8;
+}
+
+/* Social icons */
+.ct-social {
+  list-style: none;
+  display: flex;
+  gap: 0.85rem;
+}
+.ct-social svg {
+  fill: currentColor;
+  color: #546e7a;
+  transition: color 0.25s ease;
+}
+.ct-social a:hover svg {
+  color: #001f3f;
+}
+
+/* 4) RESPONSIVE ADJUSTMENTS ---------------------------------------------*/
+@media (max-width: 768px) {
+  .ct-grid {
+    gap: 1.5rem;
+  }
+}
+@media (max-width: 640px) {
+  .ct-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}/* End custom CSS */

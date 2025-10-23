@@ -1,0 +1,166 @@
+.elementor-70 .elementor-element.elementor-element-6d8ae52d{--display:flex;}/* Start custom CSS for html, class: .elementor-element-04eafee *//* Square navy bullets for FAQ lists */
+.faq-item__answer ul {
+  list-style-type: square;      /* square bullets */
+  padding-left: 1.5rem;         /* indent text from bullet */
+  margin: 0 0 1rem;             /* vertical spacing */
+}
+
+.faq-item__answer li {
+  margin-bottom: 0.5rem;        /* spacing between items */
+}
+
+/* If your theme uses ::marker, explicitly color the marker */
+.faq-item__answer li::marker {
+  color: #002F5F;               /* navy-blue bullets */
+}
+
+/* For broader support, also color the bullet via the list itself */
+.faq-item__answer ul {
+  color: #002F5F;               /* forces bullet color in some browsers */
+}
+
+
+/*=====================================
+  Complete FAQ Styles (no pink at all)
+======================================*/
+
+/* Base typography and layout resets */
+.hero--faq {
+  background: url("https://canaveral.tours/wp-content/uploads/2023/08/Van.png") center/cover no-repeat !important;
+  padding: 2.5rem 1rem !important;
+  text-align: center !important;
+}
+.hero--faq .hero__title {
+  margin: 0 !important;
+  color: #ffffff !important;
+  font-size: 2.25rem !important;
+  font-weight: 600 !important;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6) !important;
+}
+
+/* Intro & cost box */
+.faq-intro {
+  max-width: 800px !important;
+  margin: 2rem auto !important;
+  padding: 1.5rem !important;
+  background: #ffffff !important;
+  border-radius: 4px !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+}
+.faq-intro__title {
+  font-size: 1.5rem !important;
+  margin-bottom: 0.5rem !important;
+  color: #2c3e50 !important;
+}
+.faq-intro__text {
+  margin: 0 !important;
+  font-size: 1rem !important;
+  color: #4d5a6b !important;
+}
+
+/* FAQ list container */
+.faq-list {
+  max-width: 800px !important;
+  margin: 2rem auto 4rem !important;
+  background: #ffffff !important;
+  border-radius: 4px !important;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
+  overflow: hidden !important;
+}
+.faq-list .faq-item {
+  border-bottom: 1px solid #e0e0e0 !important;
+}
+
+/* Question header */
+.faq-item__question {
+  display: block !important;
+  width: 100% !important;
+  padding: 0.75rem 1rem !important;
+  margin: 0 !important;
+  background-color: transparent !important;
+  border: none !important;
+  font-size: 1.125rem !important;
+  font-weight: 600 !important;
+  text-align: left !important;
+  color: #2c3e50 !important;
+  position: relative !important;
+  cursor: pointer !important;
+  transition: background-color 0.2s, color 0.2s !important;
+  outline: none !important;
+}
+.faq-item__question::after {
+  content: "+" !important;
+  position: absolute !important;
+  right: 1rem !important;
+  top: 50% !important;
+  transform: translateY(-50%) rotate(0) !important;
+  font-size: 1.25rem !important;
+  color: #002f5f !important;
+  transition: transform 0.2s, color 0.2s !important;
+}
+
+/* Hover state */
+.faq-item__question:hover {
+  background-color: #002f5f !important; /* full navy */
+  color: #ffffff !important;
+}
+.faq-item__question:hover::after {
+  color: #ffffff !important;
+  transform: translateY(-50%) rotate(45deg) !important;
+}
+
+/* Open state */
+.faq-item.open .faq-item__question {
+  background-color: #002f5f !important;
+  color: #ffffff !important;
+}
+.faq-item.open .faq-item__question::after {
+  color: #ffffff !important;
+  transform: translateY(-50%) rotate(45deg) !important;
+}
+
+/* Answer panel */
+.faq-item__answer {
+  max-height: 0 !important;
+  overflow: hidden !important;
+  transition: max-height 0.3s ease !important;
+  background: #ffffff !important;
+  padding: 0 1rem !important;
+}
+.faq-item.open .faq-item__answer {
+  max-height: 100vh !important;
+  padding-top: 0.5rem !important;
+  padding-bottom: 1rem !important;
+}
+
+/* Answer typography */
+.faq-item__answer p {
+  margin: 0 0 1rem !important;
+  color: #4d5a6b !important;
+  line-height: 1.6 !important;
+}
+
+/* Links */
+.faq-item__answer a {
+  color: #002f5f !important;
+  text-decoration: underline !important;
+}
+.faq-item__answer a:hover {
+  color: #001f3d !important;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .hero--faq {
+    padding: 2rem 1rem !important;
+  }
+  .hero--faq .hero__title {
+    font-size: 2rem !important;
+  }
+  .faq-item__question {
+    padding: 0.75rem 0.75rem !important;
+  }
+  .faq-item__question::after {
+    right: 0.75rem !important;
+  }
+}/* End custom CSS */

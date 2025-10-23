@@ -1,0 +1,151 @@
+.elementor-497 .elementor-element.elementor-element-6c63f8f0{--display:flex;}@media(min-width:768px){.elementor-497 .elementor-element.elementor-element-6c63f8f0{--content-width:100%;}}/* Start custom CSS for html, class: .elementor-element-dca9fc4 *//*====================
+  GLOBAL & TYPOGRAPHY
+=====================*/
+body {
+  margin: 0;
+  font-family: "Barlow Condensed", sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+.section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 1rem;
+}
+
+.section__title {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #5A0000;
+}
+
+/*====================
+      HERO STYLES
+=====================*/
+.hero {
+  position: relative;
+  background: url("https://canaveral.tours/wp-content/uploads/2023/08/Alligator.png")
+    center bottom / cover no-repeat;
+  min-height: 432px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.hero__overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.hero__content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: #fff;
+}
+
+.hero__content p {
+  font-size: 1.25rem;
+  margin: 0.5rem 0;
+}
+
+.hero__content a {
+  color: #F8F1E4;
+  text-decoration: underline;
+}
+
+/*====================
+   REFUGE GRID LAYOUT
+=====================*/
+.refuge__grid {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 2rem;
+  align-items: start;
+  margin-bottom: 3rem;
+}
+
+.refuge__grid--reverse {
+  grid-template-columns: 1fr 300px;
+}
+
+.refuge__image img {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+}
+
+.refuge__copy p {
+  margin: 0;
+}
+
+/*====================
+   AIRBOAT GRID LAYOUT
+=====================*/
+.airboat {
+  background-color: #F8F1E4;
+}
+
+.airboat__grid {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 2rem;
+  align-items: center;
+}
+
+.airboat__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  padding: 0.75rem 1.5rem;
+  border-radius: 100px;
+  font-weight: 600;
+}
+
+.btn--primary {
+  background-color: #BE8B4A;
+  color: #fff;
+}
+
+/*====================
+   RESPONSIVE BREAKPOINT
+=====================*/
+@media (max-width: 768px) {
+  .refuge__grid,
+  .airboat__grid {
+    grid-template-columns: 1fr;
+  }
+  .section {
+    padding: 2rem 1rem;
+  }
+  .section__title {
+    font-size: 1.75rem;
+  }
+  .hero__content p {
+    font-size: 1rem;
+  }
+}
+/* 1) Keep the content container in “stretch” mode (paragraphs fill full width) */
+.airboat__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  /* no align-items here, so children default to stretch */
+}
+
+/* 2) Override the button only */
+.airboat__content .btn--primary {
+  align-self: center;    /* center the button in the flex container */
+  width: 100%;           /* allow it to shrink on very small screens */
+  max-width: 280px;      /* cap its width at ~280px */
+}/* End custom CSS */

@@ -1,0 +1,56 @@
+.elementor-99 .elementor-element.elementor-element-df7a47e{--display:flex;}.elementor-99 .elementor-element.elementor-element-1d54801 > .elementor-widget-container{margin:0px 0px 0px 0px;padding:0100px 0px 100px 0px;}@media(max-width:767px){.elementor-99 .elementor-element.elementor-element-1d54801{width:auto;max-width:auto;}}/* Start custom CSS for container, class: .elementor-element-df7a47e */.mi-refuge{
+  max-width:800px;
+  width:95%;
+  margin:0 auto;
+  padding:0 15px;
+}
+
+/* HEADINGS */
+.mi-refuge h1,
+.mi-refuge h2,
+.mi-refuge h3{
+  font-family:'peridot-pe-variable',sans-serif;
+  color:#235691;
+  margin:0 0 .5em 0;
+  text-transform:uppercase;
+}
+.mi-refuge h1{font-size:2em;text-align:center;}
+.mi-refuge h2{font-size:1.5em;border-bottom:2px solid #ccc;padding-bottom:.2em;margin-top:1.5em;}
+.mi-refuge h3{font-size:1.2em;margin-top:1em;}
+
+/* PARAGRAPHS */
+.mi-refuge p{
+  font-family:'sofia-pro-variable',sans-serif;
+  color:#888;
+  line-height:1.5;
+  margin:0 0 1em 0;
+}
+
+/* IMAGES */
+.mi-refuge img{
+  width:100%;
+  height:auto;               /* natural aspect ratio prevents blank gaps */
+  object-fit:cover;
+  display:block;
+  filter:brightness(1) contrast(.65) saturate(.85);
+  margin:0 auto;
+}
+
+/* === CAPTION FIX === */
+.mi-refuge p.caption{
+  font-family:'Barlow Condensed',sans-serif !important;
+  font-size:1em !important;
+  line-height:1.3 !important;
+  margin:.4em 0 1em 0 !important;
+  text-align:left !important;
+  color:#555 !important;
+}
+
+
+/* MOBILE */
+@media (max-width:360px){
+  .mi-refuge h1{font-size:1.6em;}
+  .mi-refuge h2{font-size:1.3em;}
+  .mi-refuge h3{font-size:1.1em;}
+  .mi-refuge p {font-size:.95em;}
+}/* End custom CSS */
