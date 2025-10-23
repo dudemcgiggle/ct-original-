@@ -1,4 +1,6 @@
+# =======================================
 # Python
+# =======================================
 __pycache__/
 *.py[cod]
 *$py.class
@@ -7,18 +9,34 @@ __pycache__/
 venv/
 env/
 ENV/
-.venv
+.venv/
 
+# =======================================
 # Replit
+# =======================================
 .replit
 replit.nix
 .upm/
 .cache/
 .config/
 
-# OS
+# =======================================
+# Operating System Files
+# =======================================
 .DS_Store
 Thumbs.db
+desktop.ini
 
-# Temporary
+# =======================================
+# WordPress / Backups
+# =======================================
+wp-content/updraft/*.zip
+
+# =======================================
+# Temporary & Build Directories
+# =======================================
 temp_clone/
+tmp/
+logs/
+*.log
+*.bak
